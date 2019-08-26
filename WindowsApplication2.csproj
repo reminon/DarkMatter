@@ -1,0 +1,210 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27AF891F-77DB-4B13-86DB-C8742854BED8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DarkMatter</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsApplication2</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX">
+      <Name>Microsoft.DirectX</Name>
+      <HintPath>bin\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D">
+      <Name>Microsoft.DirectX.Direct3D</Name>
+      <HintPath>bin\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX">
+      <Name>Microsoft.DirectX.Direct3DX</Name>
+      <HintPath>bin\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="WindowsControlLibrary1">
+      <Name>WindowsControlLibrary1</Name>
+      <HintPath>..\WindowsControlLibrary1\bin\WindowsControlLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form Stuff\deplist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Stuff\MapInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Stuff\metalist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Stuff\pluginpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Stuff\SelectedMetaInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportRaw.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misc\util.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raw Data\Raw.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Renderers\BitmViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renderers\BSPViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renderers\CollViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renderers\ModelViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Variables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Stuff\deplist.resx">
+      <DependentUpon>deplist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Stuff\MapInfo.resx">
+      <DependentUpon>MapInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Stuff\metalist.resx">
+      <DependentUpon>metalist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Stuff\pluginpanel.resx">
+      <DependentUpon>pluginpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Stuff\SelectedMetaInformation.resx">
+      <DependentUpon>SelectedMetaInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\util.resx">
+      <DependentUpon>util.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renderers\BitmViewer.resx">
+      <DependentUpon>BitmViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renderers\BSPViewer.resx">
+      <DependentUpon>BSPViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renderers\CollViewer.resx">
+      <DependentUpon>CollViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renderers\ModelViewer.resx">
+      <DependentUpon>ModelViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
